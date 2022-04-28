@@ -1,6 +1,6 @@
- # Specify the work directory
+# Specify the work directory
  setwd ("/(where target and counts file are)")
- # Code to load target file
+# Code to load target file
  read.csv("target.txt")
 tableoftarget <- read.csv("target.txt", sep="\t")
 # Code to load counts file
