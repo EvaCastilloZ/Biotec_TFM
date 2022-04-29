@@ -1,11 +1,12 @@
- setwd ("/home/eva/Dropbox/EvaCastillo")
+# Specify work directory
+setwd ("/(Specify work directory)
  # Code to load target file
  read.csv("target.txt")
 tableoftarget <- read.csv("target.txt", sep="\t")
 # Code to load counts file
 read.table("counts.txt")
 tableofcountswrn <- read.table("counts.txt", sep="\t", row.names=1, header=TRUE)
-# Code to run expression analysis
+# Code to run expression analysis (and coexpression)
 library(ExpHunterSuite)
 DEAcomplete <- main_degenes_Hunter(raw=tableofcountswrn, target=tableoftarget, modules="DNLE", output_files = "RESULTS")
 DEAcompleteCOexp <- main_degenes_Hunter(raw=tableofcountswrn, target=tableoftarget, modules="DNLEW", output_files = "RESULTS")
@@ -18,6 +19,4 @@ FunctionalanalysisCOexp <- functional_hunter(DEAcompleteCOexp, 'Mouse', func_ann
 print(wd())
 write_enrich_files(func_results=Functionalanalysis)
 write_functional_report(hunter_results=DEAcomplete, func_results=Functionalanalysis)
-
-
 > write_functional_report(hunter_results=DEAcompleteCOexp, func_results=FunctionalanalysisCOexp)
