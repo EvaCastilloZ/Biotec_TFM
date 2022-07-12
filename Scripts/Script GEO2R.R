@@ -121,14 +121,14 @@ targetable[targetable == "no"] <- "Ctrl"
 
 #modify order of column
 TARGET <- targetable[,c(3,1,2)]
-write.table(TARGET, file = "TARGET.txt", sep="\t", quote = FALSE, row.names = FALSE)
+write.table(TARGET, file = "target.txt", sep="\t", quote = FALSE, row.names = FALSE)
 
 
 #COUNTS TABLE
 exprs(gset)
 counts <- exprs(gset)
 Countsrounded <- round(counts)
-write.table(Countsrounded, sep="\t", quote = FALSE, file = "COUNTS.txt")
+write.table(Countsrounded, sep="\t", quote = FALSE, file = "counts.txt")
 
 # summarize test results as "up", "down" or "not expressed"
 dT <- decideTests(fit2, adjust.method="fdr", p.value=0.05)
