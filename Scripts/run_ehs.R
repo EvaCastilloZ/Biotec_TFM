@@ -9,9 +9,9 @@ read.table("counts.txt")
 counts_no_rownames <- read.table("counts.txt", sep="\t", row.names=1, header=TRUE)
 # Code to run expression analysis
 #dea_4_modules <- main_degenes_Hunter(raw=counts_no_rownames, 
-                                      target=tableoftarget,
-                                      modules="DNLE",
-                                      output_files = "RESULTS")
+                                     # target=tableoftarget,
+                                     # modules="DNLE",
+                                     # output_files = "RESULTS")
 
 # To run coexpression analysis (with WGCNA)
 dea_coexpression <- main_degenes_Hunter(raw=counts_no_rownames,
