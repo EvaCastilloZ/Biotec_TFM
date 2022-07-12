@@ -1,7 +1,7 @@
 # Version info: R 3.2.3, Biobase 2.30.0, GEOquery 2.40.0, limma 3.26.8
 ################################################################
 #   Differential expression analysis with limma
-setwd ("/home/eva/Dropbox/EvaCastillo")
+setwd ("/home/eva/Escritorio/Biotec_TFM")
 library(GEOquery)
 library(limma)
 library(umap)
