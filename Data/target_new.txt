@@ -1,0 +1,121 @@
+sample	treat 	treat_received
+GSM2858678	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858682	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858686	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858688	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858690	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858692	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858694	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858699	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858701	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858705	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858707	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858711	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858713	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858716	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858718	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858726	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858727	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858729	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858739	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858742	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858746	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858748	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858749	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858760	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858761	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858766	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858767	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858772	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858780	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858789	Treat	Anthracyclines and/or taxanes + carboplatin
+GSM2858792	Ctrl	Anthracyclines and/or taxanes + carboplatin
+GSM2858677                               Ctrl	Anthracyclines and/or taxanes
+GSM2858679                               Ctrl	Anthracyclines and/or taxanes
+GSM2858680                              Treat	Anthracyclines and/or taxanes
+GSM2858681                               Ctrl	Anthracyclines and/or taxanes
+GSM2858683                              Treat	Anthracyclines and/or taxanes
+GSM2858684                               Ctrl	Anthracyclines and/or taxanes
+GSM2858685                               Ctrl	Anthracyclines and/or taxanes
+GSM2858687                               Ctrl	Anthracyclines and/or taxanes
+GSM2858689                               Ctrl	Anthracyclines and/or taxanes
+GSM2858691                               Ctrl	Anthracyclines and/or taxanes
+GSM2858693                               Ctrl	Anthracyclines and/or taxanes
+GSM2858695                               Ctrl	Anthracyclines and/or taxanes
+GSM2858696                               Ctrl	Anthracyclines and/or taxanes
+GSM2858697                              Treat	Anthracyclines and/or taxanes
+GSM2858698                               Ctrl	Anthracyclines and/or taxanes
+GSM2858700                               Ctrl	Anthracyclines and/or taxanes
+GSM2858702                              Treat	Anthracyclines and/or taxanes
+GSM2858703                               Ctrl	Anthracyclines and/or taxanes
+GSM2858704                              Treat	Anthracyclines and/or taxanes
+GSM2858706                              Treat	Anthracyclines and/or taxanes
+GSM2858708                               Ctrl	Anthracyclines and/or taxanes
+GSM2858709                               Ctrl	Anthracyclines and/or taxanes
+GSM2858710                               Ctrl	Anthracyclines and/or taxanes
+GSM2858712                              Treat	Anthracyclines and/or taxanes
+GSM2858714                               Ctrl	Anthracyclines and/or taxanes
+GSM2858715                               Ctrl	Anthracyclines and/or taxanes
+GSM2858717                               Ctrl	Anthracyclines and/or taxanes
+GSM2858719                              Treat	Anthracyclines and/or taxanes
+GSM2858720                               Ctrl	Anthracyclines and/or taxanes
+GSM2858721                               Ctrl	Anthracyclines and/or taxanes
+GSM2858722                              Treat	Anthracyclines and/or taxanes
+GSM2858723                               Ctrl	Anthracyclines and/or taxanes
+GSM2858724                               Ctrl	Anthracyclines and/or taxanes
+GSM2858725                               Ctrl	Anthracyclines and/or taxanes
+GSM2858728                              Treat	Anthracyclines and/or taxanes
+GSM2858730                              Treat	Anthracyclines and/or taxanes
+GSM2858731                              Treat	Anthracyclines and/or taxanes
+GSM2858732                              Treat	Anthracyclines and/or taxanes
+GSM2858733                               Ctrl	Anthracyclines and/or taxanes
+GSM2858734                              Treat	Anthracyclines and/or taxanes
+GSM2858735                              Treat	Anthracyclines and/or taxanes
+GSM2858736                              Treat	Anthracyclines and/or taxanes
+GSM2858737                               Ctrl	Anthracyclines and/or taxanes
+GSM2858738                               Ctrl	Anthracyclines and/or taxanes
+GSM2858740                               Ctrl	Anthracyclines and/or taxanes
+GSM2858741                               Ctrl	Anthracyclines and/or taxanes
+GSM2858743                              Treat	Anthracyclines and/or taxanes
+GSM2858744                              Treat	Anthracyclines and/or taxanes
+GSM2858745                               Ctrl	Anthracyclines and/or taxanes
+GSM2858747                               Ctrl	Anthracyclines and/or taxanes
+GSM2858750                               Ctrl	Anthracyclines and/or taxanes
+GSM2858751                               Ctrl	Anthracyclines and/or taxanes
+GSM2858752                              Treat	Anthracyclines and/or taxanes
+GSM2858753                               Ctrl	Anthracyclines and/or taxanes
+GSM2858754                              Treat	Anthracyclines and/or taxanes
+GSM2858755                               Ctrl	Anthracyclines and/or taxanes
+GSM2858756                               Ctrl	Anthracyclines and/or taxanes
+GSM2858757                              Treat	Anthracyclines and/or taxanes
+GSM2858758                               Ctrl	Anthracyclines and/or taxanes
+GSM2858759                               Ctrl	Anthracyclines and/or taxanes
+GSM2858762                              Treat	Anthracyclines and/or taxanes
+GSM2858763                               Ctrl	Anthracyclines and/or taxanes
+GSM2858764                               Ctrl	Anthracyclines and/or taxanes
+GSM2858765                              Treat	Anthracyclines and/or taxanes
+GSM2858768                               Ctrl	Anthracyclines and/or taxanes
+GSM2858769                               Ctrl	Anthracyclines and/or taxanes
+GSM2858770                              Treat	Anthracyclines and/or taxanes
+GSM2858771                               Ctrl	Anthracyclines and/or taxanes
+GSM2858773                              Treat	Anthracyclines and/or taxanes
+GSM2858774                               Ctrl	Anthracyclines and/or taxanes
+GSM2858775                              Treat	Anthracyclines and/or taxanes
+GSM2858776                               Ctrl	Anthracyclines and/or taxanes
+GSM2858777                              Treat	Anthracyclines and/or taxanes
+GSM2858778                              Treat	Anthracyclines and/or taxanes
+GSM2858779                               Ctrl	Anthracyclines and/or taxanes
+GSM2858781                               Ctrl	Anthracyclines and/or taxanes
+GSM2858782                               Ctrl	Anthracyclines and/or taxanes
+GSM2858783                               Ctrl	Anthracyclines and/or taxanes
+GSM2858784                              Treat	Anthracyclines and/or taxanes
+GSM2858785                              Treat	Anthracyclines and/or taxanes
+GSM2858786                               Ctrl	Anthracyclines and/or taxanes
+GSM2858787                               Ctrl	Anthracyclines and/or taxanes
+GSM2858788                              Treat	Anthracyclines and/or taxanes
+GSM2858790                              Treat	Anthracyclines and/or taxanes
+GSM2858791                              Treat	Anthracyclines and/or taxanes
+GSM2858793                              Treat	Anthracyclines and/or taxanes
+GSM2858794                              Treat	Anthracyclines and/or taxanes
+GSM2858795                              Treat	Anthracyclines and/or taxanes
+
