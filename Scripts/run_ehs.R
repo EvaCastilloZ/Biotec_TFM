@@ -18,7 +18,7 @@ dea_coexpression <- main_degenes_Hunter(raw=counts_no_rownames,
                                         target=table_of_target, 
                                         modules="DW", 
                                         output_files = "RESULTS")
-#save(dea_coexpression, file="dea_coexpression.R")
+save(dea_coexpression, file="dea_coexpression.R")
 load("dea_coexpression.R")
 # Code to make a report on the expression analysis
 #write_expression_report(exp_results=dea_4_modules) 
