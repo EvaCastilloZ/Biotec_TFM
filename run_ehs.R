@@ -6,7 +6,10 @@ setwd("/home/eva/Escritorio/")
 table_of_target <- read.csv("target.txt", sep="\t")
 # Code to load counts file
 read.table("counts.txt")
-counts_no_rownames <- read.table("counts.txt", sep="\t", row.names=1, header=TRUE)
+counts_no_rownames <- read.table("counts.txt",
+                                 sep="\t",
+                                 row.names=1,
+                                 header=TRUE)
 # Code to run expression analysis
 #dea_4_modules <- main_degenes_Hunter(raw=counts_no_rownames, 
                                       target=tableoftarget,
