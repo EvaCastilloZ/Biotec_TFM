@@ -1,12 +1,8 @@
 library(ExpHunterSuite)
-# Specify the work directory
-setwd("/home/eva/Escritorio/")
  # Code to load target file
- read.csv("target.txt")
-table_of_target <- read.csv("target.txt", sep="\t")
+table_of_target <- read.csv("../Data/target.txt", sep="\t")
 # Code to load counts file
-read.table("counts.txt")
-counts_no_rownames <- read.table("counts.txt", sep="\t", row.names=1, header=TRUE)
+counts_no_rownames <- read.table("../Data/counts.txt", sep="\t", row.names=1, header=TRUE)
 # Code to run expression analysis
 #dea_4_modules <- main_degenes_Hunter(raw=counts_no_rownames, 
                                      # target=tableoftarget,
@@ -18,8 +14,8 @@ dea_coexpression <- main_degenes_Hunter(raw=counts_no_rownames,
                                         target=table_of_target, 
                                         modules="DW", 
                                         output_files = "RESULTS")
-save(dea_coexpression, file="dea_coexpression.R")
-load("dea_coexpression.R")
+save(dea_coexpression, file="../Data/dea_coexpression.RData")
+load("dea_coexpression.RData")
 # Code to make a report on the expression analysis
 #write_expression_report(exp_results=dea_4_modules) 
 write_expression_report(exp_results=dea_coexpression) 
