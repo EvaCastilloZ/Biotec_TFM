@@ -25,7 +25,7 @@ coexpression_functional_analysis <- main_functional_hunter(dea_coexpression,
                                                            'Human', 
                                                            enrich_dbs = c("MF","BP","Reactome"), 
                                                            enrich_methods = "ORA",
-                                                           input_gene_id = "EMSEMBL" )
+                                                           input_gene_id = "ENTREZID" )
 # Code to make a report on the functional analysis
 print(wd())
 write_enrich_files(func_results=functional_analysis)
@@ -34,3 +34,16 @@ write_functional_report(hunter_results=dea_4_modules,
                         func_results=functional_analysis)
 write_functional_report(hunter_results=dea_coexpression,
                         func_results=coexpression_functional_analysis)
+                        
+     FUNCTIONAL ANALYSIS
+cd ~/software/Biotec_TFM/Data
+R
+library(ExpHunterSuite)
+table_of_target <- read.csv("../Data/target.txt", sep="\t")
+counts_no_rownames <- read.table("../Data/countsid.txt", sep="\t", row.names=1, header=TRUE)
+load("dea_coexpression.RData")
+coexpression_functional_analysis <- main_functional_hunter(dea_coexpression,
+                                                           'Human', 
+                                                           enrich_dbs = c("MF","BP","Reactome"), 
+                                                           enrich_methods = "ORA",
+                                                           input_gene_id = "ENSEMBL" )
