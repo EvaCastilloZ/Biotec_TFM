@@ -2,7 +2,7 @@ library(ExpHunterSuite)
  # Code to load target file
 table_of_target <- read.csv("../Data/target.txt", sep="\t")
 # Code to load counts file
-counts_no_rownames <- read.table("../Data/counts.txt", sep="\t", row.names=1, header=TRUE)
+counts_no_rownames <- read.table("../Data/countsid.txt", sep="\t", row.names=1, header=TRUE)
 # Code to run expression analysis
 #dea_4_modules <- main_degenes_Hunter(raw=counts_no_rownames, 
                                      # target=tableoftarget,
