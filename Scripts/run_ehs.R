@@ -24,7 +24,8 @@ write_expression_report(exp_results=dea_coexpression)
 coexpression_functional_analysis <- main_functional_hunter(dea_coexpression,
                                                            'Human', 
                                                            enrich_dbs = c("MF","BP","Reactome"), 
-                                                           enrich_methods = "ORA")
+                                                           enrich_methods = "ORA",
+                                                           input_gene_id = "EMSEMBL" )
 # Code to make a report on the functional analysis
 print(wd())
 write_enrich_files(func_results=functional_analysis)
