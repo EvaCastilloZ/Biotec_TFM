@@ -47,14 +47,13 @@ dea_coexpression <- main_degenes_Hunter(raw=counts_no_rownames,
                                         modules="DW", 
                                         output_files = "RESULTS")
                                         
-A <-  dea_coexpression$DE_all_genes
-A[A == "NOT_DEG"] <- "PREVALENT_DEG"
- 
- write_expression_report(exp_results=dea_coexpression) 
+write_expression_report(exp_results=dea_coexpression) 
   
-save(dea_coexpression, file="../Data/dea_coexpression.RData")
+#save(dea_coexpression, file="../Data/dea_coexpression.RData")
 load("dea_coexpression.RData")
 
+A <-  dea_coexpression$DE_all_genes
+A[A == "NOT_DEG"] <- "PREVALENT_DEG"
 
 # Code to run functional analysis
 #functional_analysis <- main_functional_hunter(dea_4_modules, 'Human', enrich_dbs = c("MF", "BP","Reactome"), enrich_methods = "ORA")
