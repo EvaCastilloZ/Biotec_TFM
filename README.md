@@ -28,7 +28,7 @@ install.packages(c("biomaRt", "dplyr", "GEOquery", "limma"))
 To obtain these dataframes, we need to run the GEO2R_script.R located in the Scripts folder.
 
 ## Run ExpHunterSuite and obtaining reports
-Run expression and functional analysis with the "script_ExpHunterSuite.R" script and obtain functional and expression reports (and/or coexpression adding module W to main_degenes_hunter function). 
+Run expression and functional analysis with the "ExpHunterSuite_script.R" script and obtain functional and expression reports (and/or coexpression adding module W to main_degenes_hunter function). 
 
 ## CITATIONS
 
