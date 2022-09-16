@@ -19,10 +19,15 @@ To install ExpHunterSuite from console, we need to use the devtools to install R
 devtools::install_github("seoanezonjic/ExpHunterSuite")
 ```
 
+To install required R-packages, try to install them via BiocManager (http://bioconductor.org/install/) calling BiocManager::install() or by CRAN. For CRAN, you can type the following:
+```bash
+install.packages(c("biomaRt", "dplyr", "GEOquery", "limma"))
+```
+
 ## Obtaining the counts and target table from GEO2R
 To obtain these dataframes, we need to run the GEO2R_script.R located in the Scripts folder.
 
-## Run ExpHunterSuite
-Expression and functional analysis with the "script_ExpHunterSuite.R" script and obtain functional and expression reports (and/or coexpression adding module W to main_degenes_hunter function). 
+## Run ExpHunterSuite and obtaining reports
+Run expression and functional analysis with the "script_ExpHunterSuite.R" script and obtain functional and expression reports (and/or coexpression adding module W to main_degenes_hunter function). 
 
 
