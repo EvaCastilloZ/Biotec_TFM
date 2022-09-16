@@ -21,10 +21,10 @@ devtools::install_github("seoanezonjic/ExpHunterSuite")
 
 To install the latest versions of all R-packages required to run ExpHunterSuite, use the necessary_libraries.R located in Scripts folder.
 
-# Obtaining the counts and target table
+## Obtaining the counts and target table
 To obtain these dataframes, we need to run the GEO2R_script.R located in the Scripts folder.
 
-# Run ExpHunterSuite
-Expression and functional analysis with the script_ExpHunterSuite.R script
+## Run ExpHunterSuite
+Expression and functional analysis with the "script_ExpHunterSuite.R" script and obtain functional and expression reports (and/or coexpression adding module W to main_degenes_hunter function. 
 
 
