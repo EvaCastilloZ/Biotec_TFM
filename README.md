@@ -1,15 +1,30 @@
-Script to run expression and functional analysis for a file with packages from ExpHunterSuite (Bioconductor)
+# DOCUMENTATION - README
+> Master's end project that tries to find genes with differential expression between many patients that has developed triple negative breast cancer (TNBC).
 
-# REQUERIMENTS
-- R version 4.2 (or later)
-- Bioconductor v. 3.15
+## REQUERIMENTS
+R version 4.2 (or later)
 
-# Installation
-Install latest R-Version
-Go to page https://cloud.r-project.org/ and install the latest R version on your computer. Install also the latest Bioconductor version in http://bioconductor.org/install
+## Installation
 
-# Install ExpHunterSuite and required R-packages
-To download ExpHunterSuite: https://bioconductor.org/packages/release/workflows/html/ExpHunterSuite.html
+### Install latest R-Version 
+Go to page https://cloud.r-project.org/ and install the latest R version on your computer.
+
+### Install Bioconductor
+To install the latest Bioconductor version, go to page http://bioconductor.org/install/
+
+### Install ExpHunterSuite and required R-packages
+To install ExpHunterSuite from console, we need to use the devtools to install R packages from GitHub. It can be done with these commands:
+
+``` bash
+devtools::install_github("seoanezonjic/ExpHunterSuite")
+```
+
+To install the latest versions of all R-packages required to run ExpHunterSuite, use the necessary_libraries.R located in Scripts folder.
+
+# Obtaining the counts and target table
+To obtain these dataframes, we need to run the GEO2R_script.R located in the Scripts folder.
 
 # Run ExpHunterSuite
-Expression and functional analysis with the run_ehs.R script
+Expression and functional analysis with the script_ExpHunterSuite.R script
+
+
