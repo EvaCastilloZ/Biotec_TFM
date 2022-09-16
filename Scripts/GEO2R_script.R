@@ -2,8 +2,11 @@
 ############################################# GEO2R data ############################################
 ######################################################################################################
 
+# loading libraries
+library(biomaRt)
+library(dplyr)
+library(GEOquery)
 
-library("biomaRt")
 # load series and platform data from GEO
 gset <- getGEO("GSE106977", GSEMatrix =TRUE, AnnotGPL=FALSE)
 if (length(gset) > 1) idx <- grep("GPL17586", attr(gset, "names")) else idx <- 1

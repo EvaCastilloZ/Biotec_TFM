@@ -19,8 +19,6 @@ To install ExpHunterSuite from console, we need to use the devtools to install R
 devtools::install_github("seoanezonjic/ExpHunterSuite")
 ```
 
-To install the latest versions of all R-packages required to run ExpHunterSuite, use the necessary_libraries.R located in Scripts folder.
-
 ## Obtaining the counts and target table from GEO2R
 To obtain these dataframes, we need to run the GEO2R_script.R located in the Scripts folder.
 

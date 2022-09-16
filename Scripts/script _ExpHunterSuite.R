@@ -1,3 +1,5 @@
+library(ExpHunterSuite)
+ 
  # Code to load target file
 table_of_target <- read.csv("target.txt", sep="\t")
 # Code to load counts file
@@ -8,9 +10,9 @@ hunter_results_coexp <- main_degenes_Hunter(raw=counts_no_rownames,
                                         target=table_of_target, 
                                         modules="DELNW", 
                                         output_files = "RESULTS")
-              
 # Code to obtain expression report                          
 write_expression_report(exp_results=hunter_results_coexp)
+ 
  
 hunter_results_coexp$DE_all_genes[hunter_results_coexp$DE_all_genes == "NOT_DEG"] <- "PREVALENT_DEG"
 
