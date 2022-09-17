@@ -30,9 +30,9 @@ gsms <- paste0("11101001111110111111011110101001110011101001101111",
      "10000010001111110011111110101101101011011110100101",
    "0011111001100001000")
 sml <- strsplit(gsms, split="")[[1]]
-sampleinfo <- as.data.frame(pData(gset))
-sml_nocarb <- sml[sampleinfo$characteristics_ch1.1 == "treatment: Anthracyclines and/or taxanes"]
-sml_carb <- sml[sampleinfo$characteristics_ch1.1 != "treatment: Anthracyclines and/or taxanes"]
+#sampleinfo <- as.data.frame(pData(gset))
+#sml_nocarb <- sml[sampleinfo$characteristics_ch1.1 == "treatment: Anthracyclines and/or taxanes"]
+#sml_carb <- sml[sampleinfo$characteristics_ch1.1 != "treatment: Anthracyclines and/or taxanes"]
 
 # log2 transformation
 ex <- exprs(gset)
