@@ -9,8 +9,7 @@ counts_no_rownames <- read.table("../counts_modified.txt", sep="\t", row.names=1
 # To run coexpression analysis (with WGCNA)
 hunter_results_coexp <- main_degenes_Hunter(raw=counts_no_rownames,
                                         target=table_of_target, 
-                                        modules="DELNW", 
-                                        output_files = "RESULTS")
+                                        modules="DELNW")
                                         
 # we recommend use the save function because its size                 
                                         
