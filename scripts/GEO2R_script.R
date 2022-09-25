@@ -13,12 +13,12 @@ gset <- getGEO("GSE106977", GSEMatrix =TRUE, AnnotGPL=FALSE)
 if (length(gset) > 1) idx <- grep("GPL17586", attr(gset, "names")) else idx <- 1
 gset <- gset[[idx]]
 
-gset_medians <- rowMedians(Biobase::exprs(gset))
+#gset_medians <- rowMedians(Biobase::exprs(gset))
 
-hist_res <- hist(gset_medians, 100, col = "cornsilk1", freq = FALSE, 
-            main = "Histogram of the median intensities", 
-            border = "antiquewhite4",
-            xlab = "Median intensities")
+#hist_res <- hist(gset_medians, 100, col = "cornsilk1", freq = FALSE, 
+ #           main = "Histogram of the median intensities", 
+  #          border = "antiquewhite4",
+   #         xlab = "Median intensities")
 
 #gset <- gset[rowMedians(Biobase::exprs(gset)) > 5,]
 
@@ -30,9 +30,9 @@ gsms <- paste0("11101001111110111111011110101001110011101001101111",
      "10000010001111110011111110101101101011011110100101",
    "0011111001100001000")
 sml <- strsplit(gsms, split="")[[1]]
-sampleinfo <- as.data.frame(pData(gset))
-sml_nocarb <- sml[sampleinfo$characteristics_ch1.1 == "treatment: Anthracyclines and/or taxanes"]
-sml_carb <- sml[sampleinfo$characteristics_ch1.1 != "treatment: Anthracyclines and/or taxanes"]
+#sampleinfo <- as.data.frame(pData(gset))
+#sml_nocarb <- sml[sampleinfo$characteristics_ch1.1 == "treatment: Anthracyclines and/or taxanes"]
+#sml_carb <- sml[sampleinfo$characteristics_ch1.1 != "treatment: Anthracyclines and/or taxanes"]
 
 # log2 transformation
 ex <- exprs(gset)
@@ -67,8 +67,7 @@ tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","SPOT_ID"))
 # Obtain counts table rounding them
 exprs(gset)
 counts <- exprs(gset)
-counts_rounded <- round(counts)
-counts_modified <- counts_rounded
+counts_modified <- round(counts)
 
 ensembl <- useMart("ensembl", dataset = "hsapiens_gene_ensembl")
 
