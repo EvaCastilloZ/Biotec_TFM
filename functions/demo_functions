@@ -1,0 +1,15 @@
+showtable <- function(file) { 
+print(file) 
+}
+
+counts_from_gset <- function(gset) { 
+counts <- exprs(gset)
+return(counts) 
+}
+
+counts_table_rounded <- function(gset) {
+counts <- exprs(gset)
+counts_mod <- round(counts)
+return(counts_mod) 
+}
+

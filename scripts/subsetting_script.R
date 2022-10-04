@@ -57,7 +57,7 @@ counts_modified_c <- counts_modified_c[! duplicated(entrez_rownames), ]
 row.names(counts_modified_c) <- entrez_rownames[! duplicated(entrez_rownames)]
 
 # generate the counts table
-write.table(counts_modified_c, file = "carb_counts.txt", sep="\t", quote = FALSE, )
+write.table(counts_modified_c, file = "carb_counts.txt", sep="\t", quote = FALSE)
 
 # obtain target table
 target_carb <- as.data.frame(pData(gset_carb))
