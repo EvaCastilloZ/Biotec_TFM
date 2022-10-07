@@ -5,7 +5,8 @@ library(GEOquery)
 library(biomaRt)
 library(limma)
 library(umap)
-library("dplyr")
+library(dplyr)
+
 # load series and platform data from GEO
 gset <- getGEO("GSE106977", GSEMatrix =TRUE, AnnotGPL=FALSE)
 if (length(gset) > 1) idx <- grep("GPL17586", attr(gset, "names")) else idx <- 1
@@ -55,9 +56,6 @@ write.table(tT, file=stdout(), row.names=F, sep="\t")
 # assumption is that most genes are not differentially expressed.
 tT2 <- topTable(fit2, adjust="fdr", sort.by="B", number=Inf)
 probes <- tT2[tT2$adj.P.Val<0.01 & abs(tT2$logFC)>1,c("ID","logFC","P.Value","adj.P.Val")]
-write.table(probes, file="probes.txt", sep="\t", quote = FALSE)
-hist(aa$adj.P.Val, col = "grey", border = "white", xlab = "P-adj",
-  ylab = "Number of genes", main = "P-adj value distribution")
 
 # summarize test results as "up", "down" or "not expressed"
 dT <- decideTests(fit2, adjust.method="fdr", p.value=0.05)
@@ -82,12 +80,6 @@ row.names(dT) <- entrez_rownames[! duplicated(entrez_rownames)]
 vennDiagram(dT, circle.col=palette()) 
 
 ############### DIFFERENTIAL EXPRESSION ANALYSIS ALL SAMPLES BASED ON TREATMENT ##################
-#   Differential expression analysis with limma
-library(GEOquery)
-library(biomaRt)
-library(limma)
-library(umap)
-library("dplyr")
 
 # load series and platform data from GEO
 
@@ -140,9 +132,9 @@ write.table(tT, file=stdout(), row.names=F, sep="\t")
 # Build histogram of P-values for all genes. Normal test
 # assumption is that most genes are not differentially expressed.
 tT2 <- topTable(fit2, adjust="fdr", sort.by="B", number=Inf)
-aa <- tT2[tT2$adj.P.Val<0.01 & abs(tT2$logFC)>1,c("ID","logFC","P.Value","adj.P.Val")]
-write.table(aa, file="genesbyresponse.txt", sep="\t", quote = FALSE)
-hist(aa$adj.P.Val, col = "grey", border = "white", xlab = "P-adj",
+probes <- tT2[tT2$adj.P.Val<0.01 & abs(tT2$logFC)>1,c("ID","logFC","P.Value","adj.P.Val")]
+write.table(probes, file="probes.txt", sep="\t", quote = FALSE)
+hist(probes$adj.P.Val, col = "grey", border = "white", xlab = "P-adj",
   ylab = "Number of genes", main = "P-adj value distribution")
 
 # summarize test results as "up", "down" or "not expressed"

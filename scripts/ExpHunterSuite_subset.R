@@ -10,7 +10,7 @@ table_of_target <- read.csv("carb_target.txt", sep="\t")
 counts_no_rownames <- read.table("carb_counts.txt", header=TRUE, row.names=1, sep="\t")
 
 # to run diferential and coexpression analysis
-hunter_results_coexp <- main_degenes_Hunter(modules="DELNW", 
+hunter_results_coexp <- main_degenes_Hunter(modules="DW", 
 					    raw=counts_no_rownames,
                                             target=table_of_target)
                                                                            
@@ -46,7 +46,7 @@ table_of_target <- read.csv("nocarb_target.txt", sep="\t")
 counts_no_rownames <- read.table("nocarb_counts.txt", header=TRUE, row.names=1, sep="\t")
 
 # to run diferential and coexpression analysis
-hunter_results_coexp <- main_degenes_Hunter(modules="DELNW", 
+hunter_results_coexp <- main_degenes_Hunter(modules="DW", 
 					    raw=counts_no_rownames,
                                             target=table_of_target)
                                         
