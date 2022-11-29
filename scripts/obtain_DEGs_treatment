@@ -1,0 +1,10 @@
+fta <- as.data.frame(dT)
+fta$id <- row.names(fta)
+AA <- fta[fta$"ANTH.TAX...CARB-ANTH.TAX" !=0,]
+write.table(AA, file="genes_treatment.txt", quote = FALSE, sep="\t", row.names=FALSE)
+underexpressed <- AA[AA$"ANTH.TAX...CARB-ANTH.TAX" == -1,]
+write.table(underexpressed, file="gene_underexpressed.txt", quote = FALSE, sep="\t", row.names=FALSE)
+overexpressed <- AA[AA$"ANTH.TAX...CARB-ANTH.TAX" != -1,]
+write.table(overexpressed, file="gene_overexpressed.txt", quote = FALSE, sep="\t", row.names=FALSE)
+
+
