@@ -75,6 +75,7 @@ dT <- dT[! is.na(entrez_rownames), ]
 entrez_rownames <- entrez_rownames[!is.na(entrez_rownames)]
 dT <- dT[! duplicated(entrez_rownames), ]
 row.names(dT) <- entrez_rownames[! duplicated(entrez_rownames)]
+genes <- write.table(dT, file = "significant_genes.txt", quote = FALSE, row.names = FALSE, sep="\t")
 
 # Venn diagram of results
 vennDiagram(dT, circle.col=palette()) 
