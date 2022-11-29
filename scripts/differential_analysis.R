@@ -133,9 +133,19 @@ write.table(tT, file=stdout(), row.names=F, sep="\t")
 # assumption is that most genes are not differentially expressed.
 tT2 <- topTable(fit2, adjust="fdr", sort.by="B", number=Inf)
 probes <- tT2[tT2$adj.P.Val<0.01 & abs(tT2$logFC)>1,c("ID","logFC","P.Value","adj.P.Val")]
-write.table(probes, file="probes.txt", sep="\t", quote = FALSE)
-hist(probes$adj.P.Val, col = "grey", border = "white", xlab = "P-adj",
-  ylab = "Number of genes", main = "P-adj value distribution")
+# To obtain table of genes differentially expressed
+ensembl <- useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+row.names(probes) <- gsub(".1$", "", row.names(probes))
+probe2entrez <- getBM(attributes = c("affy_hta_2_0", "entrezgene_id"), filters = "affy_hta_2_0", values=row.names(probes), mart=ensembl)
+#load("probe2entrez.RData")# probe2entrez <- probe2entrez[! duplicated(probe2entrez[,1]),]entrez_rownames <- probe2entrez[,2][match(row.names(counts_modified), probe2entrez[,1])]
+entrez_rownames <- probe2entrez[,2][match(row.names(probes), probe2entrez[,1])]
+
+probes <- probes[! is.na(entrez_rownames), ]
+entrez_rownames <- entrez_rownames[!is.na(entrez_rownames)]
+probes <- probes[! duplicated(entrez_rownames), ]
+row.names(probes) <- entrez_rownames[! duplicated(entrez_rownames)]
+
+write.table(probes, file="DEGs.txt", sep="\t", quote = FALSE, row.names = FALSE)
 
 # summarize test results as "up", "down" or "not expressed"
 dT <- decideTests(fit2, adjust.method="fdr", p.value=0.05)
@@ -156,6 +166,7 @@ dT <- dT[! is.na(entrez_rownames), ]
 entrez_rownames <- entrez_rownames[!is.na(entrez_rownames)]
 dT <- dT[! duplicated(entrez_rownames), ]
 row.names(dT) <- entrez_rownames[! duplicated(entrez_rownames)]
+
 
 # Venn diagram of results
 vennDiagram(dT, circle.col=palette()) 
